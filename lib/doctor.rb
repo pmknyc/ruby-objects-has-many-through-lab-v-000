@@ -19,7 +19,7 @@ class Doctor
 
 # create array of a doctor's appts
 	def appointments
-    appointments = Appointment.all.collect do
+    Appointment.all.collect do
 			|appt| appt if appt.doctor == self
 		end
 	end
