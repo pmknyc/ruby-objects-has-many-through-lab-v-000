@@ -14,7 +14,7 @@ class Doctor
 	end
 
 	def new_appointment(patient, date)
-		Appointment.new(patient, date, self)
+		Appointment.new(patient, self, date)
 	end
 
 # create array of a doctor's appts
